@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Internet of Soils | Remote measurements of soil moisture in protective forests</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Internet of Soils" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Remote measurements of soil moisture in protective forests" />
+<meta property="og:description" content="Remote measurements of soil moisture in protective forests" />
+<link rel="canonical" href="http://localhost:4000/sysarch.html" />
+<meta property="og:url" content="http://localhost:4000/sysarch.html" />
+<meta property="og:site_name" content="Internet of Soils" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Internet of Soils" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Remote measurements of soil moisture in protective forests","headline":"Internet of Soils","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"}},"url":"http://localhost:4000/sysarch.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">Internet of Soils</a></h1>
+
+        
+          <img src="/assets/img/logo.png" alt="Logo" />
+        
+
+        <p>Remote measurements of soil moisture in protective forests</p>
+
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="overview-of-the-system-architecture">Overview of the system architecture</h1>
+
+<p>Here, we provide a quick overview of our project’s system architecture. As we are currently in the process of revising the hardware design of the sensor nodes to use dedicated A/D converters, the source code for programming the MCU is not yet available. As soon as the revision is finished, a link to the source code will be provided.</p>
+
+<p>We use widely available off the shelf components.</p>
+
+<h2 id="data-transfer">Data transfer</h2>
+
+<p>Data from each sensor node is being transferred using the <a href="https://en.wikipedia.org/wiki/LoRa">LoRa</a> protocol (see Fig. 1). <a href="https://www.thethingsnetwork.org/">The Things Network (TTN)</a> serves as the backhaul to make readings available over the internet. An MQTT client on our own servers then collects the data and stores it in and <a href="https://www.influxdata.com/">InfluxDB</a> instance. For pretty dashboards, we use <a href="https://grafana.com/">Grafana</a>.</p>
+
+<p><img src="./assets/img/diag_comm.svg" alt="communication architecture" /></p>
+<h5 id="fig-1-overview-of-our-communication-stack">Fig. 1: Overview of our communication stack</h5>
+
+<p>While we chose to host the database and visualization on our own infrastructure, this architecture can also be entirely deployed on existing services online. Of course, almost any other database can be used for storage and it’s up to you if you want live visualization. Our experience has shown that live visualization can be extremely valuable for monitoring the sensors themselves.</p>
+
+<h2 id="sensor-node">Sensor node</h2>
+
+<p>We currently use cheap capacitive moisture sensors for our measurements. Their precision is everything but great, but we are optimistic that we can compensate for most inaccuracies with proper calibration. Simulateneously, we also measure the temperature around each sensor with a TMP36 probe.</p>
+
+<p>The entire node is powered with a solar cell and a lead acid battery. While this battery technolog is admittedly outdated, we chose it due to its durability against high and low temperatures. We can expect our nodes to need charging at sub zero temperatures. And on the high temperature end, we really wouldn’t want to deploy highly falmmable LiPo batteries into a forest during a period of fire hazard ;)</p>
+
+<p>The brains of the operation is a devkit based around an ESP32. We currently use <a href="https://www.sparkfun.com/products/17743">Sparkfun’s Thing Plus based around the ESP32-S2</a>. If you chose your own MCU board, make sure that its periphery is optimized for low power consumption during deep sleep.</p>
+
+<p>The LoRa communication itself is managed by a board build around the SX127x series of chips.</p>
+
+<p>An abstract overview of the sensor node design is provided in Fig. 2.</p>
+
+<p><img src="./assets/img/diag_sensor_V2.svg" alt="sensor node architecture" /></p>
+<h5 id="fig-2-overview-of-the-sensor-node">Fig. 2: Overview of the sensor node</h5>
+
+<p>Most of the components in this design can be exchanged for something different, should sourcing become difficult and/or new hardware be released</p>
+
+<p><a href="./">back</a></p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

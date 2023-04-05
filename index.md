@@ -14,9 +14,19 @@ We deployed an alpah version of our sensor and are currently in the process of r
 
 [Here](http://86.119.41.87:3000/dashboard/snapshot/09Tbp4CK9fNlcNbqSsvg8HvJWb97OphB) you can see a sample of the data we record.
 
+## Prototype deployment
+
+*TODO*: add pictures!
+
+## System architecture
+
+Click [here](./sysarch.html) to have a look at the architecture behind the sensor node its communication.
+
 ## Contact
 
-|Who?          |Does what?                |Talk!  |
+Do you have a question or a comment? Do you want to build your own sensor nodes and don't know where to start? Feel free to contact us using the coordinates below!
+
+|Who?          |Does what?                |Talk to us!|
 |:-------------|:-------------------------|:------|
 |[Christine Moos](https://linkedin.com/in/christine-moos-515585183)|Forest Biology            |christine.moos@bfh.ch|
 |[Estelle Noyer](https://noyerestelle.wordpress.com/) |Calibration, data analysis|estelle.noyer@bfh.ch |

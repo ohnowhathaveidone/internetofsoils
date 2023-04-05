@@ -18,7 +18,7 @@ We deployed an alpah version of our sensor and are currently in the process of r
 
 |Who?          |Does what?                |Talk!  |
 |:-------------|:-------------------------|:------|
-|[Christine Moos](linkedin.com/in/christine-moos-515585183)|Forest Biology            |christine.moos@bfh.ch|
+|[Christine Moos](https://linkedin.com/in/christine-moos-515585183)|Forest Biology            |christine.moos@bfh.ch|
 |[Estelle Noyer](https://noyerestelle.wordpress.com/) |Calibration, data analysis|estelle.noyer@bfh.ch |
 |[Nikita Aigner](https://github.com/ohnowhathaveidone) |Technical stuff           |nikita.aigner@bfh.ch |
 

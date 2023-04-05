@@ -10,13 +10,13 @@ This project aims to develop low cost sensor nodes for long-term monitoring of s
 
 ## Project status
 
-We deployed an alpah version of our sensor and are currently in the process of revising the design. Check back for updates!
+We deployed an alpha version of our sensor and are currently in the process of revising the design. Check back for updates!
 
 [Here](http://86.119.41.87:3000/dashboard/snapshot/09Tbp4CK9fNlcNbqSsvg8HvJWb97OphB) you can see a sample of the data we record.
 
 ## Prototype deployment
 
-*TODO*: add pictures!
+Click [here](./protopics.html) to see some impressions of our prototype deployment.
 
 ## System architecture
 

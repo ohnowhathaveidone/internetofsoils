@@ -24,7 +24,7 @@ We fix the sensorheads themselves with 3d printed holders in a 50 mm PVC sewage 
 
 ## Deployment
 
-The slim design of our sensor allows it to be deployed relatively easily into a hole drilled with a manual earth auger. This yields enough loose soil for it to be packed around the moisture sensors to ensure good contact with the underground environment. Eventually, we intend to install more sensor nodes in protection forests which are typically on slopes with very rocky soils. Thus it is beneficial, if as little heavy gear as possibleis required for the installation.
+The slim design of our sensor allows it to be deployed relatively easily into a hole drilled with a manual earth auger. This yields enough loose soil for it to be packed around the moisture sensors to ensure good contact with the underground environment. Eventually, we intend to install more sensor nodes in protection forests which are typically on slopes with very rocky soils. Thus it is beneficial, if as little heavy gear as possible is required for the installation.
 
 ![drilling a hole](./assets/img/handauger.jpg)
 

@@ -61,21 +61,34 @@
 
 <p>Welcome to the Internet of Soils project page!</p>
 
-<p>This project aims to develop low cost sensor nodes for long-term monitoring of soil moisture. We want to provide an open source design that will allow you to build your own nodes and to modify them to your own needs. Our primary focus are soils in protection forests, but (as long as it’s legal and you don’t hurt anyone) you are free to stick a sensor wherever you like.</p>
+<p>This project aims to develop low cost sensor nodes for long-term monitoring of ~soil~ ~moisture~ whatever you need moitored in remote areas. We will provide an open source design that will allow you to build your own nodes and to modify them to your own needs. Our primary focus are soils in protection forests and trees in urban areas, but (as long as it’s legal and you don’t hurt anyone) you are free to stick a sensor wherever you like.</p>
 
-<h2 id="project-status--roadmap">Project status &amp; Roadmap</h2>
+<h2 id="project-history-status--roadmap">Project history, status &amp; roadmap</h2>
 
 <p>We deployed an alpha version of our sensor at a site in Zollikofen (CH-BE). <a href="http://86.119.41.87:3000/dashboard/snapshot/6U7bzUOIN1Sz8jtWq3N0pNmtaTdS7YJt">Here</a> you can see a sample of the data we record.</p>
 
-<p>We are currently in the process of revising the hardware design of the sensor node. In the next months, we will deploy several (beta version) nodes at a protection forest site around Martigny (CH-VS). At the same time, detailed plans and source code will be made publicly available. If you want to stay up to date on the progress, check back here or leave your email address <a href="#get-updates">below</a>.</p>
+<p>In November 2023, we deployed eight sensors in a protection forest near Martigny (CH-VS). In May 2024, six out of them were still sending data, while one was hit by a falling branch soon after installation and another one seems to have run out of energy. Forests are not the most suitable area to harvest solar power - trees not only protect from natural hazards, but also from sunlight. To make things worse, our test site is situated on a steep slope facing north. On the upside, we get to test the guts out of our devices in properly suboptimal conditions.</p>
+
+<p>We currently redesign some of the peripherals for the next monitoring project! <a href="https://www.bfh.ch/en/research/research-projects/2023-527-998-470/">The Mobile Urban Green (MUG)</a> aims to lay the groundwork to better understand the positive effects of trees in urban areas and the suitability of different tree species for the purpose. While some work is necessary to adapt our solution to other types of sensors, the ability to reuse the backbone of the project gave us a proper boost to get going fast.</p>
 
 <h2 id="prototype-deployment">Prototype deployment</h2>
 
-<p>Click <a href="./protopics.html">here</a> to see some impressions of our prototype deployment.</p>
+<p>Click <a href="./protopics.html">here</a> to see our prototype deployment.</p>
+
+<h2 id="deployment-in-martigny">Deployment in Martigny</h2>
+
+<p>Some impressions of the test site are <a href="./martigny.html">here</a>.</p>
 
 <h2 id="system-architecture">System architecture</h2>
 
 <p>Click <a href="./sysarch.html">here</a> to have a look at the architecture behind the sensor node its communication.</p>
+
+<h2 id="how-do-i-build-a-sensor-myself">How do I build a sensor myself?</h2>
+
+<p><img src="./assets/img/whereplans.png" alt="wherePlans" /></p>
+<h5 id="fig-1-where-plans-for-build">Fig. 1: Where plans for build?</h5>
+
+<p>We did originally plan to release our design and the accompanying code to the public. The MUG Project proved that the solution was well adaptable to situations outside of the initial use case, however, a number of changes to the sensor node design were still necessary. Simply publishing instructions on the soil moisture sensor nodes would probably not generalize well for other applications. We will therefore take some time later this year to produce and publish a flexible reference design that can be used as a basis for other projects.</p>
 
 <h2 id="contact">Contact</h2>
 
@@ -102,30 +115,20 @@
     </tr>
     <tr>
       <td style="text-align: left"><a href="https://github.com/ohnowhathaveidone">Nikita Aigner</a></td>
-      <td style="text-align: left">Technical stuff</td>
+      <td style="text-align: left">Confused Technology Officer</td>
       <td style="text-align: left">nikita.aigner@bfh.ch</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.linkedin.com/in/lennart-becker-4425ba236/">Lennart Becker</a></td>
+      <td style="text-align: left">Chief Making Officer</td>
+      <td style="text-align: left">lennart.becker@bfh.ch</td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="get-updates">Get updates</h2>
-
-<p>If you’d like receive updates as soon as we make progress, feel free to leave your email address!</p>
-
-<!-- template from formspree -->
-<form action="https://formspree.io/f/xwkjaola" method="POST">
-  <label>
-    Your email:
-    <input type="email" name="email" />
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Submit!</button>
-</form>
-<p><br /></p>
-
 <h2 id="acknowledgements">Acknowledgements</h2>
 
-<p>We want to thank <a href="https://www.bfh.ch/en/">Bern University of Applied Science</a> for financially supporting this project within the <a href="https://www.bfh.ch/de/aktuell/news/2022/bfh-foerdert-interdepartementale-forschung/">BFH Transversal</a> program.</p>
+<p>We want to thank <a href="https://www.bfh.ch/en/">Bern University of Applied Science</a> for financially supporting this project in 2023 within the <a href="https://www.bfh.ch/de/aktuell/news/2022/bfh-foerdert-interdepartementale-forschung/">BFH Transversal</a> program.</p>
 
 
       </section>
